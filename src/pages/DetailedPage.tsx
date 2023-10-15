@@ -40,6 +40,8 @@ const DetailedPage: FC<iProps> = ({ props, setState }) => {
   };
 
   return (
+    <div>
+
     <div className="w-[100vw] h-[100vh] bg-[rgba(0,0,0,0.6)] flex justify-center items-center relative  ">
       <div className="w-[80%] h-[80%] bg-white rounded shadow-md flex overflow-hidden absolute z-10 ">
         <img className="w-[50%] h-full object-cover" src={props.image} />
@@ -79,6 +81,7 @@ const DetailedPage: FC<iProps> = ({ props, setState }) => {
         </div>
       </div>
     </div>
+                </div>
   );
 };
 

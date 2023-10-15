@@ -47,6 +47,9 @@ const MainPage = () => {
   const { data, isLoading } = useProduct();
 
   return (
+    <div>
+      
+      <div className="bg-[] h-[100vh] w-full flex justify-center items-center">
     <div className="relative">
       {isLoading ? (
         <div>
@@ -100,6 +103,9 @@ const MainPage = () => {
           <DetailedPage props={propsState} setState={setState} />
         </div>
       )}
+
+      </div>
+    </div>
     </div>
   );
 };

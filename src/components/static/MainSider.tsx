@@ -20,13 +20,14 @@ const MainSider = () => {
   return (
     <div>
       <div
-        className={` h-[100vh] bg-purple-100 fixed transition-all duration-300 overflow-hidden z-10 `}
+        className={` h-[100vh] bg-[purple] fixed transition-all duration-300 overflow-hidden z-10`}
         style={{
           width: `${!toggle ? "160px" : "70px"}`,
           transition: "all 350m",
-        }}
+        }} 
       >
-        <div className="w-full justify-center flex mt-8 ">
+        <div 
+        className="w-full justify-center flex mt-8 ">
           {!toggle ? (
             <BsLayoutSidebarInsetReverse
               className="text-[25px] text-purple-900 hover:scale-[1.04] hover:cursor-pointer duration-300 transition-all "
